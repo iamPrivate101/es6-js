@@ -1,0 +1,36 @@
+<script>
+//string concatenation differences in Es5 and ES6
+
+let firstName = "Dr.";
+let lastName =  "Strange";
+
+//ES5
+console.log("first name" + firstName + "last name" + lastName);
+
+// Es6
+console.log(`first name  ${firstName} ${lastName}`)
+
+
+//using other expression
+let a = 50;
+let b = 60;
+
+console.log("test is: " + (a+b) + "and\n not " + (2* a+b));
+//Es6
+console.log(`test is ${a+b} and
+    not ${2*a+b}`);
+
+
+// ES6 string.method
+const fname = `${firstName} `;
+const fullName = `${firstName} ${lastName} `
+
+console.log(fname.startsWith('D'));
+console.log(fname.startsWith('d'));
+console.log(fname.endsWith('D'));
+console.log(fname.includes('r'));
+console.log(fullName.repeat(10));
+
+
+
+</script>

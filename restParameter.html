@@ -1,0 +1,34 @@
+<script>
+// ES5 
+function sum(a,b,c,d,e){  //number of parameter should match
+    return (a+b+c+d+e);   //(1+2)
+}
+
+console.log(sum(1,2,3,4,5));  //passed multiple paramater should match
+
+// ES6 rest aprameter
+
+function sum(...inputs){  //rest parameter
+    console.log(inputs);
+    let total = 0;
+    for (let i  of inputs ){
+        total += i;
+    }
+    console.log(total);
+}
+
+sum(1,2,3,4,5,10);
+
+
+//rest with function  and other arguments
+function fun(a,b,...c){
+    console.log(`${a} ${b}`);
+    console.log(c);
+    console.log(c.length);
+    console.log(c.indexOf('ram'));
+    console.log(`${c[0]}`);
+}
+
+fun('messi','ronaldo','sam','hari','ram');
+
+</script>

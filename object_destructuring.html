@@ -1,0 +1,15 @@
+<script>
+    const biodata = {
+        name : "Strange",
+        age : 10,
+        deg : "BCA",
+    }
+
+    //without destructing 
+    console.log(`Name: ${biodata.name} age: ${biodata.age} deg: ${biodata.deg}`);
+
+    //object destructuring
+    let name,age, deg;
+    ({name:myname,age, deg} = biodata);
+    console.log(`Name: ${myname} age: ${age} deg: ${deg}`);
+</script>
